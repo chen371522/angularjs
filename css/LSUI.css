@@ -1,0 +1,125 @@
+/* ColorCombo421: test the contrast effect of text and background color
+   http://www.colorcombos.com/color-schemes/421/ColorCombo421.html
+*/
+html, body
+{
+    width: 100%;
+    height: 100%;
+}
+body {
+    margin: 0px;
+}
+.LSUIContainer {
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+.LSTitle {
+    height: 60px;
+    background-color: #EC6C3F;
+    font-size: 35px;
+    font-weight: bold;
+    color: Aqua;
+}
+.LSBody {
+    height: calc(100% - 60px);    
+}
+.LSContent {
+    height: calc(100% - 48px);    
+    background-color: #F0855E;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.LSFooter {
+    height: 40px;
+    background-color: #F0855E;
+    padding: 4px;
+}
+.LSStackWrapper {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    background-color: #F3D8BD;
+}
+#LSShowContainer {
+    width: calc(67% - 4px); /*space is required before and after "-" */
+    float: left;
+}
+#LSInfoContainer {
+    width: 33%;
+    float: right;
+}
+.TableDiv {
+    text-align: center;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.TableRowDiv {
+    display: table-row;
+    height: 100%;
+}
+.TableCellDiv {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+.TableCellGap {
+    width: 4px;
+}
+.FooterSection {
+    background-color: #F0B099;
+}
+#TableCellView {
+    width: 250px;
+}
+#TableCellNavigator {
+    width: 200px;
+}
+#TableCellBlank {
+    /*width: 200px;*/
+}
+.FooterTextSection {
+    color: #087FC4;
+    font-size: 18px;
+}
+#TableCellFrameNo {
+    width: 80px;
+}
+#TableCellCopyright {
+    width: 60px;
+}
+.TableCellBody {
+}
+#ViewDiv{
+	
+}
+.LSStackedDiv {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+}
+#LSCanvasContainer {
+    visibility: hidden;
+    background-color: Beige;
+}
+#TOC {
+    visibility: visible;
+}
+#showInfoDiv {
+    display: block;
+}
+#confInfoDiv {
+    display: none;
+}
+.infoItem {
+    font-size: 20px;
+    font-weight: bold;
+}
+.infoItemF {
+    color: #126E08;
+}
+.infoItemB {
+    color: #1D17AA;
+}

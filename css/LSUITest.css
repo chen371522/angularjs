@@ -1,0 +1,56 @@
+body {
+    text-align:center;
+}
+.backPlate {
+	margin:auto; /*this will center the block horizontally*/
+    text-align:left;
+	width:800px;
+    *width:800px;
+    min-width:750px;
+    background-color: silver;
+}
+.header {
+	height:80px;
+	background-color:#F3F2ED;
+	margin:0;
+	padding:0;
+}
+.bodyUpper {
+    display: block;
+    margin: 0 0 0 0;
+    float: none;
+    width: auto;
+    height: 480px;
+    position: static;
+}
+.naviPane {
+    float: left;
+    width: 33%;
+    height: 100%;
+    background:#CCC8B3;
+}
+.contentPane {
+    float: right;
+    width: 66%;
+    height: 100%;
+}
+.bodyLower {
+    position: relative;
+}
+.lowerContent{
+	height:300px;
+	background:#F6F0E0;
+	border-top:#FFFFFF 2px solid;
+	margin:0;
+	padding:0;
+}
+.footPlate {
+    clear: both;
+}
+.footer{
+	height:50px;
+	background:#BFBD93;
+	border-top:#FFFFFF 2px solid;
+	margin:0;
+	padding:0;
+}

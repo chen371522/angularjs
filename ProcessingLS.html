@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+    <title>Processing for Lessons</title> 
+    <!--link href="css/WDWButton.css" rel="stylesheet" type="text/css" /-->
+    <link href="css/AwesomeButtons.css" rel="stylesheet" type="text/css"/>
+    <link href="css/LSUI.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.11.1.js" ></script>
+    <!-- see https://github.com/azatoth/jquery-sprintf for specification -->
+    <script type="text/javascript" src="js/DataStructures.js" ></script>
+    <script type="text/javascript" src="js/jquery.sprintf.js"></script>
+    <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+    <script src="js/processing.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/HCDLib.js"></script>
+    <script type="text/javascript" src="js/LSUtil.js"></script>
+    <script type="text/javascript" src="js/ProcessingLS.js"></script>
+    <script type="text/javascript" src="js/LSShows.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".LSStackWrapper").niceScroll({
+                cursorborder:"",
+                cursorcolor:"#00F",
+                boxzoom:true,
+                autohidemode:false
+            }); 
+        });
+    </script>
+</head>
+<body>
+    <div class="LSUIContainer">
+        <div class="LSTitle">
+            <div id="TitleTable" class="TableDiv">
+                <div id="TitleRow" class="TableRowDiv">
+                    <div id="TitleCell" class="TableCellDiv">
+                        <div id="TitleBody" class="TableCellBody">
+                            Processing for Lessons
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="LSBody">
+            <div class="LSContent">
+                <div id="LSShowContainer" class="LSStackWrapper">
+                    <div id="LSCanvasContainer" class="LSStackedDiv">
+                        <!--canvas id="LSCanvas"></canvas-->
+                    </div>
+                    <div id="TOC" class="LSStackedDiv">
+                        <h3>Table of Contents</h3>
+                        <div class="infoItem infoItemF">
+                            <p><a href="#" onclick="PLS.simpleLineMovementTOC()">
+                                Simple line move</a></p>
+                            <p><a href="#" onclick="PLS.sineWaveTOC()">
+                                Sine wave</a></p>
+                            <p><a href="#" onclick="PLS.bubbleSortTOC()">
+                                Bubble sort</a></p>
+                            <p><a href="#" onclick="PLS.canvasSizingTOC()">
+                                Canvas Sizing</a></p>
+                            <p><a href="#" onclick="PLS.tableTestTOC()">
+                                Table test</a></p>
+                            <p><a href="#" onclick="PLS.tableArrayTestTOC()">
+                                TableArray test</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="LSInfoContainer" class="LSStackWrapper">
+                    <div id="showInfoDiv" class="LSStackedDiv">
+                        <div class="infoItem infoItemF">Begin executing:</div>
+                    </div>
+                    <div id="confInfoDiv" class="LSStackedDiv">Configuration</div>
+                </div>
+            </div>
+            <div id = "Footer" class="LSFooter">
+                <div id="FooterDiv" class="TableDiv">
+                    <div id="FooterRow" class="TableRowDiv">
+                        <div id="TableCellNavigator" class="TableCellDiv FooterSection">
+                            <div class="TableCellBody">
+<button id="btnFirst" class="medium blue awesome"><code> << </code></button>
+<button id="btnPrevious" class="medium blue awesome" >
+    <code> < </code></button>
+<button id="btnNext" class="medium blue awesome">
+    <code> > </code></button>
+<button id="btnLast" class="medium blue awesome"><code> >> </code></button>
+                            </div>
+                        </div>
+                        <div id="TableCellBlank" class="TableCellDiv">
+                            <div class="TableCellBody">
+                            </div>
+                        </div>
+                        <div id="TableCellView" class="TableCellDiv FooterSection">
+                            <div id="ViewDiv" class="TableCellBody">
+<button id="btnTOC2Show" class="medium blue awesome"
+        onclick = "Util.btnTOC2ShowClick(this)">
+        <code>Show</code></button>
+<button id="btnView2" class="medium blue awesome"><code> t2 </code></button>
+<button id="btnView3" class="medium blue awesome"><code> t3 </code></button>
+<button id="btnView4" class="medium blue awesome"
+        onclick="randomText()"
+        ><code> t4 </code></button>
+                            </div>
+                        </div>
+                        <div class="TableCellDiv TableCellGap">
+                            <div class="TableCellBody">
+                            </div>
+                        </div>
+                        <div id="TableCellFrameNo" class="TableCellDiv FooterSection FooterTextSection">
+                            <div id="FrameNo" class="TableCellBody">
+                                <code>0/0</code>
+                            </div>
+                        </div>
+                        <div class="TableCellDiv TableCellGap">
+                            <div class="TableCellBody">
+                            </div>
+                        </div>
+                        <div id="TableCellCopyright" class="TableCellDiv FooterSection FooterTextSection">
+                            <div class="TableCellBody">
+                                <span>&copy; HCD</span>
+                            </div>
+                        </div>
+                    </div> <!-- TableRowDiv -->
+                </div> <!-- TableDiv -->
+            </div> <!-- LSFooter -->
+        </div> <!-- LSBody -->
+    </div> <!-- LSUIContainer -->
+    
+</body>
+</html>
